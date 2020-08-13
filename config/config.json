@@ -1,0 +1,9 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Qwerty@123",
+    "database": "tmdb",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}

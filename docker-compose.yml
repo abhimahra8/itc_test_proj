@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  redis:
+    image: redis:alpine
+
+  app:
+    image: itc_project:1.1
+    ports:
+      - "3000:8080"
+    env_file:
+      - ./.env
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    depends_on:
+      - redis
