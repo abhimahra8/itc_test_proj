@@ -5,6 +5,8 @@ import { counter } from "../utility/common";
 
 export class TvEpisode {
    
+    // method to get top 20 records for episodes in a season based on tv id and season no.
+
     async getTvEpisode(payload:any){
         
         const res = [];

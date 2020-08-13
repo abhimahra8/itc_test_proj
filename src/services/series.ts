@@ -4,6 +4,8 @@ import { redisClient } from "../database";
 import { counterModel } from '../model/counter';
 
 export class TvSeries {
+
+    // method to get tv series detail
    
     async getTvSeries(payload:any){
         
@@ -43,6 +45,8 @@ export class TvSeries {
             throw new Error('Series service: Error in Database')
         }
     } 
+
+    // method for getting top tv series based on number of time user access the episodes api
 
     async getTopTvSeries(){
         const series = [];
